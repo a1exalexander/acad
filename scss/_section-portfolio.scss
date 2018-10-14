@@ -1,0 +1,23 @@
+.section-portfolio {
+	padding-bottom: 100px;
+	&__text {
+		text-transform: uppercase;
+		text-align: center;
+		font-family: $title-font;
+		font-size: 0.875rem;
+		font-weight: 700;
+		&--button {
+			background-color: transparent;
+			outline: none;
+			color: $DARK-GREY;
+			&:hover {
+				color: $MAIN-COLOR;
+			}
+		}
+	}
+	
+	&__list {
+		list-style: none;
+	}
+	
+}

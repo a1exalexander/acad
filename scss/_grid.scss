@@ -1,0 +1,32 @@
+@media (max-width: 640px) {
+	.grid {
+	
+		&__item {
+			width: 100% !important;
+			margin-bottom: 1rem !important;
+			img {
+				width: 100% !important;
+			}
+		}
+		&__sizer {
+			width: 50% !important;
+		}
+		&__gutter {
+			width: 0 !important;
+		}
+	}
+}
+
+.grid {
+	
+	&__item {
+		width: 30%;
+		margin-bottom: 1.5rem;
+	}
+	&__sizer {
+		width: 30%;
+	}
+	&__gutter {
+		width: 1.5rem;
+	}
+}

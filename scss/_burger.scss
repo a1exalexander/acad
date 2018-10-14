@@ -1,0 +1,82 @@
+.hamburger {
+	width: 31px;
+	height: 15px;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	&:hover & {
+		&__line {
+			visibility: hidden;
+			width: 0px;
+			&::before {
+				visibility: visible;
+				transform-origin: left center;
+				transform: rotate(45deg);
+				width: 21px;
+				transition-property: transform, width;
+				transition-timing-function: ease-in-out;
+				transition-duration: 0.2s;	
+			}
+			&::after { 
+				visibility: visible;
+				transform-origin: left center;
+				transform: rotate(-45deg);
+				width: 21px;
+				transition-property: transform, width;
+				transition-timing-function: ease-in-out;
+				transition-duration: 0.2s;
+			}
+		}
+	}
+	&:not(:hover) & {
+		&__line {
+			visibility: visible;
+			transition-property: width;
+			transition-timing-function: ease-in-out;
+			transition-duration: 0.2s;	
+			&::before {
+				visibility: visible;
+				transition-property: transform, width;
+				transition-timing-function: ease-in-out;
+				transition-duration: 0.2s;	
+			}
+			&::after { 
+				visibility: visible;
+				transition-property: transform, width;
+				transition-timing-function: ease-in-out;
+				transition-duration: 0.2s;
+			}
+		}
+	}
+	
+	&__line {
+		display: block;
+		left: 0;
+		background-color: $DARK-GREY;
+		width: 31px;
+		height: 1px;
+		&::before {
+			top: 0;
+			left: 0;
+			position: absolute;
+			background-color: $DARK-GREY;
+			content: '';
+			width: 15px;
+			height: 1px;
+		}
+		&::after {
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			background-color: $DARK-GREY;
+			content: '';
+			width: 23px;
+			height: 1px;
+		}
+	}
+}
+
+
+

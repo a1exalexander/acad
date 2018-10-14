@@ -1,0 +1,10 @@
+.logo {
+    font-family: $title-font;
+    color: $DARK-GREY;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 2.667;
+    &:hover {
+        opacity: 0.9;
+    }
+}

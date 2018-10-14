@@ -1,0 +1,50 @@
+.footer {
+	&__list {
+		list-style: none;
+	}
+	&__item {
+		white-space: nowrap;
+		text-align: center;
+	
+		&::after {
+			content: '-';
+			padding: 0 0.5rem 0 0.4rem;
+			color: $LIGHT-GREY;
+		}
+		&:last-child {
+			&::after {
+				content: none;
+				padding: 0;
+			}
+		}
+		
+	
+	}
+	&__link {
+		text-align: center;
+	}
+	&__text {
+		font-family: $title-font;
+		color: $LIGHT-GREY;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 3.429;
+		text-transform: uppercase;
+	}
+	&__social {
+		a {
+			color:  $GREY;
+			font-size: 1.125rem;
+			font-weight: 400;
+			line-height: 2.667;
+			margin-right: 1rem;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				color: $MAIN-COLOR !important;
+			}
+		}
+		
+	}
+}

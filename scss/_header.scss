@@ -1,0 +1,70 @@
+@media (max-width: 640px) {
+    .header {
+        min-height: min-content !important;
+        &__title {
+            white-space: normal !important;
+        }
+        .container-fluid {
+            min-height: min-content !important;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .header__photo {
+        bottom: -25px !important;
+    }
+}
+
+@media screen { 
+    * {font-family: sans-serif;}
+  }
+
+.header {
+    min-height: 100vh;
+    background-image: url('../image/header-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container-fluid {
+        min-height: 100vh;
+        padding-bottom: 50px;
+        
+    }
+    &__caption {
+        background-color: $MAIN-COLOR;
+        text-transform: uppercase;
+        font-family: $title-font;
+        color: $DARK-GREY;
+        font-size: 1.125em;
+        font-weight: 700;
+        line-height: 2.667;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &__title {
+        border-style: solid;
+        border-width: 10px;
+        border-color: $DARK-GREY;
+        
+    }
+    &__text {
+        margin: 0;
+        line-height: 1.5;
+        color: $DARK-GREY;
+    }
+    &__title-wrapper {
+        height: auto;
+    }
+    &__link {
+        font-family: $title-font;
+        color: $DARK-GREY;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    &__photo {
+        left: 80px;
+        bottom: -6rem;
+    }
+}

@@ -1,0 +1,67 @@
+@media (max-width: 640px) {
+    .button--top {
+            width: 100% !important;
+            right: 0;
+            left: 0;
+            bottom: 0 !important;
+        }
+}
+@media (max-width: 960px) {
+    .button--white {
+        width: 90% !important;
+    }
+}
+
+.button {
+    padding: 0 2rem;
+    transition: all ease-in-out 0.3s;
+    &--top {
+        background-color: $MAIN-COLOR;
+        right: 80px;
+        bottom: -25px;
+        height: 50px;
+        color: white;
+        &:hover {
+            border: 2px solid $MAIN-COLOR;
+            background-color: white;
+            color: $MAIN-COLOR;
+        }
+    }
+    &--white {
+        background-color: white;
+        color: $MAIN-COLOR;
+        padding: 1rem 2rem;
+        border: 2px solid white;
+        &:hover {
+            border-color: white;
+            background-color: $MAIN-COLOR;
+            color: white;
+        }
+    }
+    &--form {
+        background-color: $MAIN-COLOR;
+        color: white;
+        padding: 1rem 3rem;
+        border: 2px solid $MAIN-COLOR;
+        &:hover {
+            border-color: $MAIN-COLOR;
+            background-color: white;
+            color: $MAIN-COLOR;
+        }
+    }
+    &--portfolio {
+        color: white;
+        display: inline-block;
+        background-color: $MAIN-COLOR;
+        line-height: 2;
+        padding: 0 2rem;
+        &:hover {
+            border-color: $MAIN-COLOR;
+            background-color: white;
+            color: $MAIN-COLOR;
+        }
+    }
+    &:active {
+        filter: blur(1px);
+    }
+}
