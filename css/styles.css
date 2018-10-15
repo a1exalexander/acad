@@ -291,7 +291,8 @@
       font-size: 0.75rem;
       font-weight: 700;
       line-height: 4;
-      text-align: left; }
+      text-align: left;
+      vertical-align: middle; }
     .section-form input:focus {
       border-color: #7beec7;
       outline: none !important;
