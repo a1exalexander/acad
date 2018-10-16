@@ -1,45 +1,51 @@
 @media (max-width: 992px) {
     .section-form {
-		form {
-			input, button {
-				width: 100% !important;
-				height: 60px;
-			}
-		}
-	}
+        form {
+            input,
+            button {
+                width: 100% !important;
+                height: 60px;
+                display: flex;
+                align-items: center;
+            }
+            input::placeholder {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
 }
 .section-form {
-	background-color: $MAIN-COLOR;
-	padding: 50px 0;
-	h2 {
-		color: white;
-	}
-	&__caption {
-		color: $DARK-GREY !important;
-		font-size: 1.5rem;
-		line-height: 1.5;
-	}
-	&__form-wrapper {
-		background-color: #fff;
-
-	}
-	input {
-		border-color: $PLACEHOLDER-COLOR;
-		color: $DARK-GREY !important;
-		&::placeholder {
-		text-transform: uppercase;
-		font-family: Montserrat;
-		color:  $PLACEHOLDER-COLOR;
-		font-size: 0.75rem;
-		font-weight: 700;
-		line-height: 4;
-		text-align: left;
-		vertical-align: middle;
-		}
-		&:focus {
-			border-color: $MAIN-COLOR;
-			outline: none !important;
-			box-shadow: none !important;
-		}
-	}
+    background-color: $MAIN-COLOR;
+    padding: 50px 0;
+    h2 {
+        color: white;
+    }
+    &__caption {
+        color: $DARK-GREY !important;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    &__form-wrapper {
+        background-color: #fff;
+    }
+    input {
+        border-color: $PLACEHOLDER-COLOR;
+        color: $DARK-GREY !important;
+        &::placeholder {
+            text-transform: uppercase;
+            font-family: Montserrat;
+            color: $PLACEHOLDER-COLOR;
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 4;
+            text-align: left;
+            vertical-align: middle;
+        }
+        &:focus {
+            border-color: $MAIN-COLOR;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+    }
 }
